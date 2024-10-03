@@ -1,0 +1,26 @@
+./heap
+  1 -   0 : 724
+
+  1 -   0 : 724
+  0 -   1 : 793
+
+  1 -   0 : 724
+  0 -   1 : 793
+  0 -   2 : 962
+
+  1 -   0 : 724
+  0 -   1 : 777
+  0 -   2 : 962
+  1 -   3 : 793
+
+  1 -   0 : 724
+  0 -   1 : 777
+  0 -   2 : 962
+  1 -   3 : 793
+  1 -   4 : 963
+
+make: *** [run] Segmentation fault: 11
+
+(whenever i tried to use the file to directly send the numbers, 
+it didn't go through because of seg fault, genuinely tried 
+everything to solve it and nothing worked :/)
