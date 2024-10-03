@@ -5,8 +5,13 @@
 // a min heap
 
 typedef unsigned long long heap_key_t;
-typedef void* heap_value_t;
+// typedef void* heap_value_t;
 #define HEAP_KEY_FORMAT "%llu"
+
+typedef union heap_val {
+    unsigned long long as_int;
+    void *as_ptr;
+} heap_value_t;
 
 typedef struct {
     heap_key_t key;
@@ -18,6 +23,7 @@ typedef struct {
     int size;
     int capacity;
 } heap_t;
+
 
 heap_t *heap_create(int capacity);
 
